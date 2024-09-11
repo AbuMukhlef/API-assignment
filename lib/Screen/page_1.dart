@@ -17,6 +17,8 @@ class Page1 extends StatelessWidget {
           body: BlocBuilder<UserBloc, UserState>(
             builder: (context, state) {
               if (state is ShowAllUsersState) {
+                // Lazy Loading
+                // Lazy View
                 return ListView(
                     children: List.generate(
                   bloc.api.allUsers.length,

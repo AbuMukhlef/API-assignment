@@ -14,9 +14,5 @@ class PhotosBloc extends Bloc<PhotosEvent, PhotosState> {
       List<PhotosModel> allPhotos = await api.displayAllPhotos();
       emit(ShowPhotosState(allPhotos: allPhotos));
     });
-
-    on<ShowPhotosByUserIdEvent>((event, emit) async {
-      emit(ShowPhotosByUserIdState(userId: 1));
-    });
   }
 }

@@ -10,7 +10,3 @@ final class ShowPhotosState extends PhotosState {
   ShowPhotosState({required this.allPhotos});
 }
 
-final class ShowPhotosByUserIdState extends PhotosState {
-  final int userId;
-  ShowPhotosByUserIdState({required this.userId});
-}
