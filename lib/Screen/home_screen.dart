@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   BottomNavigationBarItem(
                     icon: Icon(Icons.photo_library),
-                    label: 'Photos By User Id',
+                    label: 'Posts By User Id',
                   ),
                 ],
               ),
